@@ -1,0 +1,307 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #808080;
+}
+
+main {
+  padding: 20px;
+  overflow: auto;
+}
+
+.finis {
+  overflow-y: scroll;
+  float: right;
+  width: 100%;
+  border-radius: 15px;
+  height: 900px;
+}
+
+.head_bar {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  color: white;
+}
+
+#content {
+  float: left;
+  width: 100%;
+}
+
+.book-item {
+  padding: 15px 15px 7px 10px;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin: 10px 13px 10px 15px;
+  box-shadow: 0 5px 10px 0 rgba(46, 4, 71, 0.048);
+  border-radius: 15px;
+}
+
+.search_section {
+  display: flex;
+  padding: 10px;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+#searchBook #searchBookTitle {
+  width: 100%;
+  height: 35px;
+  border-radius: 10px;
+}
+
+#searchBook #searchSubmit {
+  width: 50%;
+  height: 35px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.search_section > h2 {
+  color: #808080;
+  padding: 10px;
+}
+
+.search_section > form {
+  padding: 16px;
+  width: 100%;
+  display: flex;
+}
+
+.search_section > form > label {
+  display: flex;
+  align-items: center;
+}
+
+.search_section > form > input {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.search_section > form > button {
+  background-color: #28a745;
+  margin-left: 20px;
+  color: white;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.card-read {
+  overflow-y: scroll;
+  height: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: white;
+}
+
+input,
+button {
+  font-size: 15px;
+}
+
+.input {
+  padding: 7px;
+}
+
+.input_section {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 10px;
+  border: transparent;
+}
+
+.input_section > h2 {
+  text-align: center;
+  color: black;
+}
+
+.input_section > form > .input {
+  margin: 8px 0;
+}
+
+.input_section > form > button {
+  background-color: #28a745;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.input_section > form > button > span {
+  font-weight: bold;
+}
+
+.input_section > form > .input > input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.input_section > form > .input > label {
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.input_section > form > .input_inline {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+  color: black;
+  font-weight: bold;
+  margin: 7px;
+}
+
+.input_section,
+.book_shelf,
+.search_section {
+  background-color: white !important;
+}
+
+.book_shelf {
+  margin: 16px 0 0 0;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.book_shelf > h2 {
+  text-align: center;
+  color: black;
+}
+
+.book_shelf > .book_list {
+  padding: 16px;
+}
+
+.book_shelf > .book_list > .book_item {
+  padding: 8px 16px 16px 16px;
+  border: transparent;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.book_shelf > .book_list > .book_item > h3,
+p {
+  margin: 8px 0;
+}
+
+.book_shelf > .book_list > .book_item > .action > button {
+  border: 0;
+  padding: 5px;
+  margin: 0 5px 0 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book_shelf > .book_list > .book_item > .action > .green {
+  background-color: darkgreen;
+  color: white;
+}
+
+.book_shelf > .book_list > .book_item > .action > .red {
+  background-color: darkred;
+  color: white;
+}
+
+.search_section > form > label {
+  font-weight: bold;
+  color: black;
+}
+
+form > button:hover {
+  background-color: #3a7a49;
+  color: white;
+}
+
+.book-item > h4 {
+  padding-top: 10px;
+}
+
+.book-item > h2 {
+  color: black;
+  padding-top: 7px;
+}
+
+button.material-icons {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+  border-radius: 10px;
+  background-color: #808080;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+button.material-icons:hover {
+  background-color: #000001;
+}
+
+.author-container > h4,
+.year-container > p {
+  display: inline;
+}
+
+.author-container {
+  margin-top: 7px;
+  margin-bottom: 5px;
+}
+
+.year-container {
+  margin-bottom: 10px;
+}
+
+.year-container,
+.author-container,
+.title,
+.buttons {
+  margin: 7px 13px 0 20px;
+}
+
+.title {
+  color: black;
+}
+
+/* 
+ * Mobile Size 
+ */
+
+@media screen and (max-width: 576px) {
+  #searchBook #searchBookTitle {
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  #searchBook #searchSubmit {
+    width: 100%;
+    height: 35px;
+    border-radius: 15px;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bookshelf</title>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- My Materialize Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="head_bar">
+        <h1 class="head_bar__title">Bookshelf Apps</h1>
+    </header>
+
+    <main>
+        <div id="content">
+            <section class="input_section">
+                <h2>Masukkan Buku Baru</h2>
+                <form id="inputBook">
+                    <div class="input">
+                        <label for="inputBookTitle">Title</label>
+                        <input id="inputBookTitle" type="text" required />
+                    </div>
+                    <div class="input">
+                        <label for="inputBookAuthor">Author</label>
+                        <input id="inputBookAuthor" type="text" required />
+                    </div>
+                    <div class="input">
+                        <label for="inputBookYear">Year</label>
+                        <input id="inputBookYear" type="number" required />
+                    </div>
+                    <div class="input_inline">
+                        <label for="inputBookIsComplete" id="completed">Selesai dibaca</label
+              >
+              <input id="bookChecked" type="checkbox" />
+            </div>
+            <button id="bookSubmit" type="submit">
+              Masukkan Buku ke rak <span>Belum selesai dibaca</span>
+            </button>
+          </form>
+        </section>
+
+        <section id="cari" class="search_section">
+          <form id="searchBook">
+            <input id="searchBookTitle" type="text" placeholder="Cari Buku" />
+            <button id="searchSubmit" type="submit">search</button>
+          </form>
+        </section>
+
+        <section class="book_shelf" id="incompletebook">
+          <h2 id="dibaca">not finished reading</h2>
+
+          <article id="incompleteBookshelfList" class="book_list"></article>
+        </section>
+      </div>
+      <div class="finis">
+        <section class="book_shelf" id="completebook">
+          <h2 id="selesai">finished reading</h2>
+
+          <article id="completeBookshelfList" class="book_list"></article>
+        </section>
+      </div>
+    </main>
+    <!-- Javascript -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- sweetalert internal code -->
+    <script src="assets/js/sweetalert.min.js"></script>
+  </body>
+</html>
